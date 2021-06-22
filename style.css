@@ -5,3 +5,44 @@
   padding: 0;
   text-decoration: none;
 }
+
+:root {
+  --bg-grey-light: #f4f4f4;
+  --color-grey: #333;
+  --color-white: #fff;
+}
+
+body {
+  background-color: var(--bg-grey-light);
+  color: var(--color-grey);
+}
+
+nav {
+  /* background-color: #999; */
+}
+
+.container {
+  padding: 2rem;
+}
+
+.nav__list {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  color: var(--color-grey);
+  display: block;
+  padding: .5rem;
+}
+
+.nav__link:hover,
+.current {
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  transition: all .5s;
+}
+
+.nav__link:focus {
+  outline: 2px solid var(--color-grey);
+}
