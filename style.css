@@ -10,6 +10,11 @@
   --bg-grey-light: #f4f4f4;
   --color-grey: #333;
   --color-white: #fff;
+  --color-blue: #0000ff;
+  --color-red: #ff0000;
+  --color-orange: #ffa500;
+  --color-yellow: #ffff00;
+  --color-green: #008000;
 }
 
 body {
@@ -73,30 +78,60 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.5px;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
   text-align: center;
+}
+
+.btn {
+  border-radius: 5px;
+  display: flex;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  transform: all .5s;
+}
+
+.btn__answer {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  color: var(--color-white);
+}
+
+.btn:active {
+  transform: translateY(5px);
 }
 
 .card__item__back {
   display: none;
 }
 
-.input__list {
+.btn__list {
   align-items: center;
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.input__link {
-  background-color: blue;
-  border-radius: 5px;
-  color: var(--color-white);
-  display: block;
-  margin: .5rem;
-  padding: .5rem 1rem;
-  text-transform: uppercase;
+.btn--repeat {
+  background-color: var(--color-red);
+  border: 2px solid var(--color-red);
 }
+
+.btn--hard {
+  background-color: var(--color-orange);
+  border: 2px solid var(--color-orange);
+}
+
+.btn--good {
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
+}
+
+.btn--easy {
+  background-color: var(--color-green);
+  border: 2px solid var(--color-green);
+}
+
 
 @media (min-width: 1000px) {
   .nav__list {
